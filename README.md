@@ -16,6 +16,7 @@ The Customer Service API is responsible for **managing customer records**, inclu
 - **Java 21**
 - **Spring Boot 3.3.4**
 - **MySQL**
+- **RabbitMQ**
 
 ## Database Schema
 
@@ -194,6 +195,6 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ### Build and run the Docker container:
 ```sh
 docker build -t customer-service-api .
-docker run -p 8080:8080 customer-service-api
+docker run -p 8082:8080 customer-service-api
 ```
 
